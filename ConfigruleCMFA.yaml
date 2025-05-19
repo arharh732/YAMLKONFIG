@@ -60,20 +60,6 @@ proxies:
         Host: id-wdm.wc-webkuy.web.id
     udp: true
     
-  - name: ID 03
-    server: gomarketplacefront-cf.zoom.us
-    port: 443
-    type: trojan
-    password: d5f04dd3-82d9-4d71-8f0c-ae813e0b03c5
-    skip-cert-verify: true
-    sni: zoomgov.wc-webkuy.web.id
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-        Host: id-wdm.wc-webkuy.web.id
-    udp: true
-    
   - name: ID 04
     server: marketplacefront-cf.zoom.us
     port: 443
@@ -96,7 +82,6 @@ proxy-groups:
     proxies:
       - ID 01
       - ID 02
-      - ID 03
       - ID 04
 
   - name: MIX-X
@@ -106,7 +91,6 @@ proxy-groups:
     proxies:
       - ID 01
       - ID 02
-      - ID 03
       - ID 04
       
   - name: IKLAN
