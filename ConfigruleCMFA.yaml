@@ -32,7 +32,6 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  proxies:
   - name: ID 01
     server: support.zoom.us
     port: 443
@@ -46,7 +45,7 @@ proxies:
       headers:
         Host: id-wdm.wc-webkuy.web.id
     udp: true
-#====================================
+    
   - name: ID 02
     server: gomarketplacecontent-cf.zoom.us
     port: 443
@@ -60,7 +59,7 @@ proxies:
       headers:
         Host: id-wdm.wc-webkuy.web.id
     udp: true
-#=======================
+    
   - name: ID 03
     server: gomarketplacefront-cf.zoom.us
     port: 443
@@ -74,7 +73,7 @@ proxies:
       headers:
         Host: id-wdm.wc-webkuy.web.id
     udp: true
-#===================
+    
   - name: ID 04
     server: marketplacefront-cf.zoom.us
     port: 443
